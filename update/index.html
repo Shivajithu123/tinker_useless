@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Certificate Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="certificate-generator">
+  <div class="container">
+    <h2>Multiple Certificate Generator</h2>
+
+  
+    <form id="certificateForm">
+      
+      <!-- File Upload -->
+      <div class="form-group">
+        <label for="nameFile">Upload Names File (CSV)</label>
+        <input type="file" id="nameFile" accept=".csv">
+      </div>
+
+      <!-- Template Selection -->
+      <div class="form-group">
+        <label for="templateSelect">Choose a Certificate Template</label>
+        <select id="templateSelect">
+          <option value="template1">Template 1</option>
+          <option value="template2">Template 2</option>
+          <option value="template3">Template 3</option>
+        </select>
+      </div>
+
+      <!-- Template Previews -->
+      <div class="form-group template-previews">
+        <label>Preview Certificate Templates</label>
+        <div class="template-links">
+          <a class="tag" href="./images/template1.png" target="_blank" class="template-link">
+            <span>Template 1</span>
+          </a>
+          <a class="tag" href="templates/template2.html" target="_blank" class="template-link">
+            <img src="images/template2.jpg" alt="Template 2 Preview" class="template-image">
+            <span>Template 2</span>
+          </a>
+          <a class="tag" href="templates/template3.html" target="_blank" class="template-link">
+            <img src="images/template3.jpg" alt="Template 3 Preview" class="template-image">
+            <span>Template 3</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="generate-btn">Generate Certificates</button>
+    </form>
+    <!-- Result Section -->
+    <div id="result">
+      <h3>Generated Certificates</h3>
+      <ul id="certificateList"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- Canvas Element for Certificate Generation (Hidden) -->
+<canvas id="certificateCanvas" width="800" height="600" style="display:none;"></canvas>
+
+<!-- Link to External JavaScript File -->
+<script src="script.js"></script>
+
+ <!-- Floating Copyright Section -->
+<div class="floating-copyright">
+    <p>&copy; 2024 All rights reserved | Created by <a href="http://BITPLZ.000webhostapp.com" target="_blank">BITPLZ</a></p>
+  </div>
+  
+</body>
+</html>
