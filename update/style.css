@@ -215,3 +215,12 @@ select:focus {
     gap: 10px; /* Space between links */
     flex-wrap: wrap; /* Allows wrapping to a new line if needed */
 }
+
+#batchDownloadBtn {
+    background-color: #28a745; /* Green color for batch download */
+    color: white;
+}
+
+#batchDownloadBtn:hover {
+    background-color: #218838;
+}

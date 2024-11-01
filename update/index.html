@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Multiple Certificate Generator</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+
 </head>
 <body>
 
@@ -51,6 +53,10 @@
 
       <!-- Submit Button -->
       <button type="submit" class="generate-btn">Generate Certificates</button>
+      <!-- Batch Download Button -->
+      <!-- Batch Download Button (Initially hidden) -->
+      <button type="button" id="batchDownloadBtn" class="generate-btn" style="display: none;">Batch Download Certificates</button>
+
     </form>
     <!-- Result Section -->
     <div id="result">
@@ -72,4 +78,4 @@
   </div>
   
 </body>
-</html>
+</html> 
